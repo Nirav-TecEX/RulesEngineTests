@@ -12,3 +12,5 @@ __pycache__/
 
 # Files to Ignore
 temp
+logs
+.log

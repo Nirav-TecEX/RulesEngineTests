@@ -117,3 +117,11 @@
 
 2022-07-20 15:29:53,350 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
 
+2022-07-20 15:46:22,329 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:46:30,180 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+
+2022-07-20 15:52:11,806 - TestRun.RulesEngineTester.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:52:19,999 - TestRun.RulesEngineTester.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+

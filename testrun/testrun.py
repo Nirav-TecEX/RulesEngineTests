@@ -4,7 +4,7 @@ import subprocess
 
 class RulesEngineTester:
     def __init__(self) -> None:
-        self.__log = logging.getLogger("TestRun")
+        self.__log = logging.getLogger("TestRun").getChild("RulesEngineTester")
         self.__env = os.environ.copy()
         self.__subproc_out_txt = ""
 

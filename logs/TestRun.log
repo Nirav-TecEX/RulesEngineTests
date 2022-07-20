@@ -1,0 +1,119 @@
+2022-07-20 09:21:12,154 - TestRun.LineNum:10.Func:run - INFO - Starting process.
+
+2022-07-20 09:22:50,135 - TestRun.LineNum:10.Func:run - INFO - Starting process.
+
+2022-07-20 09:52:32,593 - TestRun.LineNum:11.Func:run - INFO - Starting process.
+
+2022-07-20 11:40:49,176 - TestRun.LineNum:21.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 11:40:49,178 - TestRun.LineNum:12.Func:__run__ - INFO - Starting process.
+
+2022-07-20 11:40:49,178 - TestRun.LineNum:24.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 11:41:37,929 - TestRun.LineNum:20.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 11:41:37,931 - TestRun.LineNum:12.Func:__run__ - INFO - Starting process.
+
+2022-07-20 11:41:37,947 - TestRun.LineNum:24.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 11:48:58,581 - TestRun.LineNum:21.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 11:48:58,582 - TestRun.LineNum:13.Func:__run__ - INFO - Starting process.
+
+2022-07-20 11:48:58,597 - TestRun.LineNum:25.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 11:56:38,317 - TestRun.LineNum:22.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 11:56:38,319 - TestRun.LineNum:13.Func:__run__ - INFO - Starting process.
+
+2022-07-20 11:56:41,348 - TestRun.LineNum:26.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 11:58:28,000 - TestRun.LineNum:22.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 11:58:28,002 - TestRun.LineNum:13.Func:__run__ - INFO - Starting process.
+
+2022-07-20 11:58:31,054 - TestRun.LineNum:27.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 11:59:01,397 - TestRun.LineNum:22.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 11:59:01,399 - TestRun.LineNum:13.Func:__run__ - INFO - Starting process.
+
+2022-07-20 11:59:04,424 - TestRun.LineNum:27.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 12:01:44,952 - TestRun.LineNum:22.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 12:01:44,959 - TestRun.LineNum:29.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 12:01:44,964 - TestRun.LineNum:29.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 12:02:42,456 - TestRun.LineNum:22.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 12:02:42,461 - TestRun.LineNum:31.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 12:03:00,472 - TestRun.LineNum:22.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 12:03:00,474 - TestRun.LineNum:13.Func:__run__ - INFO - Starting process.
+
+2022-07-20 12:03:03,493 - TestRun.LineNum:31.Func:run - INFO - Thread 1:	Done 
+
+2022-07-20 14:30:52,162 - TestRun.LineNum:44.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 14:30:55,164 - TestRun.LineNum:26.Func:__run - INFO - Starting process.
+
+2022-07-20 14:34:01,941 - TestRun.LineNum:44.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 14:34:09,145 - TestRun.LineNum:26.Func:__run - INFO - Starting process.
+
+2022-07-20 15:01:10,243 - TestRun.LineNum:56.Func:run - INFO - Thread 1:	Starting
+
+2022-07-20 15:01:36,158 - TestRun.LineNum:38.Func:__run - INFO - Subprocess Test for {filename} started.
+
+2022-07-20 15:01:57,487 - TestRun.LineNum:68.Func:run - INFO - An error occured during testing.
+	 write() argument must be str, not bytes
+
+2022-07-20 15:03:05,892 - TestRun.LineNum:38.Func:__run - INFO - Subprocess Test for {filename} started.
+
+2022-07-20 15:03:10,979 - TestRun.LineNum:67.Func:run - INFO - An error occured during testing.
+	 write() argument must be str, not bytes
+
+2022-07-20 15:03:43,851 - TestRun.LineNum:38.Func:__run - INFO - Subprocess Test for {filename} started.
+
+2022-07-20 15:03:47,372 - TestRun.LineNum:67.Func:run - INFO - An error occured during testing.
+	 'NoneType' object has no attribute 'decode'
+
+2022-07-20 15:06:35,962 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:08:53,775 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:09:46,086 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:18:30,205 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for {filename} complete.
+
+2022-07-20 15:18:58,350 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:19:16,573 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for {filename} complete.
+
+2022-07-20 15:20:20,650 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:20:29,471 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for {filename} complete.
+
+2022-07-20 15:21:35,061 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:21:44,269 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+
+2022-07-20 15:26:14,758 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:26:22,104 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+
+2022-07-20 15:27:34,919 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:27:42,481 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+
+2022-07-20 15:29:08,121 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:29:15,568 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+
+2022-07-20 15:29:46,292 - TestRun.LineNum:36.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-20 15:29:53,350 - TestRun.LineNum:53.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+

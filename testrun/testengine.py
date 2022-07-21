@@ -30,10 +30,11 @@ class RulesEngineTester:
         else:
             postman_cmd = ['python', f"{self.test_path}"] + personal_cmd
             for i in range(0, len(personal_cmd)):
+                # postman_cmd.append(f"'{personal_cmd[i]}'")
                 if personal_cmd[i] in ["-g", "-r", "--generate", "--run"]:
                     try:
                         filename = os.path.split(personal_cmd[i+1])[-1]
-                        break
+                        # break
                     except IndexError as e:
                         pass
             
@@ -85,9 +86,9 @@ class RulesEngineTester:
             unexpceted results- preferably don't. 
 
             :param tests_to_run    ::  json
-                {"test1": "-r SO_Tests.xlsx -u abc", ...}
-                Make sure the commands are space seperated because the process
-                performs a .split(" "), and that no file is accessed more than once.            
+                {"test1": "-r,SO_Tests.xlsx,-u,abc", ...}
+                Make sure the commands are COMMA seperated 
+                and that no file is accessed more than once.            
         """
         
         excel_file_path = os.path.join("temp", "excel_files")
@@ -108,13 +109,9 @@ class RulesEngineTester:
         else:
             all_commands = []
             for key in tests_to_run:
-                test_cmnds_list = tests_to_run[key].split(" ")
+                single_cmd_str = tests_to_run[key].replace(", ", ",")
+                test_cmnds_list = single_cmd_str.split(",")
                 all_commands.append(test_cmnds_list)
-                # try:
-                #     self.__log.info(f"Test from JSON payload: {key}")
-                #     self.__execute(test_cmnds_list)
-                # except Exception as e:
-                #     self.__log.info(f"An error occured during testing.\n\t {e}")
             try:
                 self.multiple_tests_run(all_commands)
             except Exception as e:

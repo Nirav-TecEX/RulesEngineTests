@@ -133,3 +133,17 @@
 
 2022-07-21 15:02:04,305 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - All tests complete
 
+2022-07-21 15:53:08,712 - TestRun.RulesEngineTester.LineNum:118.Func:run - INFO - All tests complete
+
+2022-07-21 15:56:44,551 - TestRun.RulesEngineTester.LineNum:134.Func:multiple_tests_run - INFO - 'NoneType' object has no attribute 'append'
+
+2022-07-21 15:56:44,559 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
+
+2022-07-21 15:58:26,276 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
+
+2022-07-21 16:07:34,209 - TestRun.RulesEngineTester.LineNum:121.Func:run - INFO - All tests complete
+
+2022-07-21 16:09:17,701 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
+
+2022-07-21 16:14:28,326 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
+

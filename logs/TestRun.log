@@ -104,3 +104,32 @@
 
 2022-07-21 12:07:33,553 - TestRun.RulesEngineTester.LineNum:112.Func:run - INFO - All tests complete
 
+2022-07-21 14:45:12,561 - TestRun.RulesEngineTester.LineNum:55.Func:__execute - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+
+2022-07-21 14:45:28,015 - TestRun.RulesEngineTester.LineNum:72.Func:__execute - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+
+2022-07-21 14:45:28,016 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - All tests complete
+
+2022-07-21 14:47:29,470 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - An error occured during testing.
+	 Pool.apply_async() got an unexpected keyword argument 'target'
+
+2022-07-21 14:47:29,471 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-21 14:47:53,629 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-21 14:55:00,442 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - An error occured during testing.
+	 __enter__
+
+2022-07-21 14:55:00,443 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-21 14:57:37,639 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - An error occured during testing.
+	 __enter__
+
+2022-07-21 14:57:37,640 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-21 14:58:26,665 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - __enter__
+
+2022-07-21 14:58:26,678 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-21 15:02:04,305 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - All tests complete
+

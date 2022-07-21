@@ -1,11 +1,14 @@
 import logging
 import os
 import subprocess
+import multiprocessing
+from multiprocessing import RLock
 
 class RulesEngineTester:
     def __init__(self) -> None:
         self.__log = logging.getLogger("TestRun").getChild("RulesEngineTester")
         self.__subproc_out_txt = ""
+        self.__lock = RLock
 
     @property
     def subproc_out_txt(self):
@@ -19,8 +22,7 @@ class RulesEngineTester:
     def test_path(self):
         return os.path.join("postman", "testfromexcel.py")
 
-    def __run(self, filename=None, personal_cmd=None):
-               
+    def execute(self, personal_cmd, filename=None):     
         if not personal_cmd:
             excel_file_path = os.path.join("temp", "excel_files", filename)   
             postman_cmd = ['python', f"{self.test_path}", "-r", excel_file_path, "-u", 
@@ -36,7 +38,7 @@ class RulesEngineTester:
                         pass
             
         if not filename:
-            self.__log.info("No file or commands given. ")
+            print("No file or commands given. ")
             return
 
         self.subproc_out_txt = filename.replace(".xlsx","") 
@@ -49,7 +51,7 @@ class RulesEngineTester:
                                    stderr=subprocess.PIPE,
                                    shell=True)
 
-        self.__log.info(f"Subprocess Test for {filename} started.")
+        print(f"Subprocess Test for {filename} started.")
         with open(self.subproc_out_txt, 'a', encoding='utf-8') as out_file:
             attempts = 0
             while attempts < 3:
@@ -66,23 +68,26 @@ class RulesEngineTester:
                 out_file.write(f"Attempt {attempts} Error:\n")
                 out_file.write(errs.decode('utf-8'))
                 break
-        self.__log.info(f"Subprocess Test for {filename} complete.")   
+
+        print(f"Subprocess Test for {filename} complete.")   
 
     def run(self, tests_to_run=None):
-        """ Performs the test by calling postman/testfromexcel.py and starting 
-            in a subprocess. Takes a json with a filename and flags in a string.
+        """ Performs the test by calling postman/testfromexcel.py. Can be performed on a
+            single test or multiple: takes a json with a filename and flags in a string,
+            otherwise defaults to using the xlsx files in temp/excel_files.
             
+            Defualts:
             Defaults to the xlsx files in temp/excel_files, flag -r. 
             Defaults -u to: 
             https://t06m5fii71.execute-api.eu-central-1.amazonaws.com/dev/sync/Shipment_Order__c
-    
-            :param tests_to_run    ::  json
-                {"test1": "-r SO_Tests.xlsx -u abc"}
-                Make sure the commands are space seperated because the process
-                performs a .split(" ").
-            
+
             Be careful when providing -g and -r in the same command. May produce
             unexpceted results- preferably don't. 
+
+            :param tests_to_run    ::  json
+                {"test1": "-r SO_Tests.xlsx -u abc", ...}
+                Make sure the commands are space seperated because the process
+                performs a .split(" "), and that no file is accessed more than once.            
         """
         
         excel_file_path = os.path.join("temp", "excel_files")
@@ -97,16 +102,36 @@ class RulesEngineTester:
             
             try:
                 for filename in excel_file_dir_items:
-                    self.__run(filename=filename)
+                    self.__execute(None, filename=filename)
             except Exception as e:
                 self.__log.info(f"An error occured during testing.\n\t {e}")
         else:
+            all_commands = []
             for key in tests_to_run:
-                self.__log.info(f"Test from JSON payload: {key}")
-                test_str = tests_to_run[key]
-                try:
-                    self.__run(personal_cmd=test_str.split(" "))
-                except Exception as e:
-                    self.__log.info(f"An error occured during testing.\n\t {e}")
+                test_cmnds_list = tests_to_run[key].split(" ")
+                all_commands.append(test_cmnds_list)
+                # try:
+                #     self.__log.info(f"Test from JSON payload: {key}")
+                #     self.__execute(test_cmnds_list)
+                # except Exception as e:
+                #     self.__log.info(f"An error occured during testing.\n\t {e}")
+            try:
+                self.multiple_tests_run(all_commands)
+            except Exception as e:
+                self.__log.info(f"An error occured during testing.\n\t {e}")
 
         self.__log.info("All tests complete")
+    
+    def multiple_tests_run(self, all_commands):
+        """ Allows parallel execution of newman processes.
+            Sends a set of commands to self.__run that calls the newman process.
+
+            :param all_commands ::  list of lists
+                [[], [], [] ...] 
+        """
+        with multiprocessing.Pool(2) as pool:
+            try:
+                processes = [pool.apply_async(self.execute, args=(personal_cmd,)) for personal_cmd in all_commands]
+                results = [proc.get() for proc in processes]
+            except Exception as e:
+                self.__log.info(f"{e}")

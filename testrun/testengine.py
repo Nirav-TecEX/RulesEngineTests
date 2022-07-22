@@ -3,13 +3,13 @@ import os
 import subprocess
 import multiprocessing
 from multiprocessing import RLock
-from time import sleep
 
 class RulesEngineTester:
-    def __init__(self) -> None:
+    def __init__(self, excel_file_path) -> None:
         self.__log = logging.getLogger("TestRun").getChild("RulesEngineTester")
         self.__subproc_out_txt = ""
         self.__lock = RLock
+        self.__excel_file_path = excel_file_path
 
     @property
     def subproc_out_txt(self):
@@ -64,6 +64,7 @@ class RulesEngineTester:
                     out_file.write(f"Attempt {attempts} complete.")
                     continue
                 
+                print(f"Attempting to write data for {filename}")
                 out_file.write(f"Attempt {attempts} Out:\n")
                 outs = outs.decode('utf-8')
                 try:
@@ -73,11 +74,7 @@ class RulesEngineTester:
                 out_file.write(outs)
                 out_file.write(f"Attempt {attempts} Error:\n")
                 out_file.write(errs.decode('utf-8'))
-                
-                # out_file.write(f"Attempt {attempts} Out:\n")
-                # out_file.write(outs.decode('utf-8'))
-                # out_file.write(f"Attempt {attempts} Error:\n")
-                # out_file.write(errs.decode('utf-8'))
+
                 break
         
         # attempts = 0
@@ -113,13 +110,17 @@ class RulesEngineTester:
                 and that no file is accessed more than once.            
         """
         
-        excel_file_path = os.path.join("temp", "excel_files")
+        # excel_file_path = os.path.join("temp", "excel_files")
+        excel_file_path = self.__excel_file_path
         excel_file_dir_items = os.listdir(excel_file_path)
 
         if not tests_to_run:
             # remove "jsons" folder from list
             try:
-                excel_file_dir_items.pop(0)
+                if excel_file_dir_items[0] == '.git':
+                    excel_file_dir_items.pop(0)
+                if excel_file_dir_items[0] == 'jsons':
+                    excel_file_dir_items.pop(0)
             except IndexError as e:
                 self.__log.info("Folder is empty. ")
             
@@ -141,27 +142,12 @@ class RulesEngineTester:
                     results = self.execute(all_commands[0])
             except Exception as e:
                 self.__log.info(f"An error occured during testing.\n\t {e}")
-        
-        self.__log.info("All tests complete. Writing outputs.")
-        
-        # for result in results:
-        #     for key in result:  # should only be 1 key
-        #         with open(key, 'a', encoding='utf-8') as out_file:
-        #             outs = result[key][0].decode('utf-8')
-        #             errs = result[key][1].decode('utf-8')
-        #             try:
-        #                 outs = "┌"+outs.split("┌")[1]
-        #             except IndexError as e:
-        #                 pass
-        #             out_file.write(outs)
-        #             out_file.write(errs)
-        #             sleep(2)
 
-        self.__log.info("All test outputs parsed. ")
+        self.__log.info("All test complete.")
     
     def multiple_tests_run(self, all_commands):
         """ Allows parallel execution of newman processes.
-            Sends a set of commands to self.__run that calls the newman process.
+            Sends a set of commands to self.execute that calls the newman process.
 
             :param all_commands ::  list of lists
                 [[], [], [] ...] 
@@ -174,3 +160,21 @@ class RulesEngineTester:
                 self.__log.debug(f"{e}")
         
         return results
+    
+    def write_results(self, results):
+        """ Takes a list of dicts of 2D tuple and appends the result the 
+            correct txt file- defined by the key.
+            
+            : param     :: [{filename_path: (outs, errs)}, {...}, ... ]
+        """
+        for result in results:
+            for key in result:  # should only be 1 key
+                with open(key, 'a', encoding='utf-8') as out_file:
+                    outs = result[key][0].decode('utf-8')
+                    errs = result[key][1].decode('utf-8')
+                    try:
+                        outs = "┌"+outs.split("┌")[1]
+                    except IndexError as e:
+                        pass
+                    out_file.write(outs)
+                    out_file.write(errs)

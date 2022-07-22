@@ -38,3 +38,73 @@
 
 2022-07-22 09:30:44,097 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
 
+2022-07-22 09:34:04,015 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:34:04,024 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:35:26,977 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:35:26,989 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:38:12,386 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:39:27,925 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:39:27,936 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:44:17,518 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:44:17,530 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:45:26,544 - TestRun.RulesEngineTester.LineNum:138.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:45:28,568 - TestRun.RulesEngineTester.LineNum:124.Func:run - INFO - All tests complete
+
+2022-07-22 09:47:32,416 - TestRun.RulesEngineTester.LineNum:124.Func:run - INFO - All tests complete
+
+2022-07-22 09:50:02,408 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:50:02,419 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:51:23,143 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
+
+2022-07-22 09:51:23,161 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:53:52,507 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - DEBUG - list index out of range
+
+2022-07-22 09:53:52,518 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:54:50,800 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - DEBUG - list index out of range
+
+2022-07-22 09:54:50,808 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 09:59:31,854 - TestRun.RulesEngineTester.LineNum:140.Func:multiple_tests_run - DEBUG - list index out of range
+
+2022-07-22 09:59:31,861 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 10:00:02,304 - TestRun.RulesEngineTester.LineNum:140.Func:multiple_tests_run - DEBUG - list index out of range
+
+2022-07-22 10:00:02,320 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
+
+2022-07-22 10:04:07,606 - TestRun.RulesEngineTester.LineNum:130.Func:run - INFO - All tests complete
+
+2022-07-22 10:33:10,903 - TestRun.RulesEngineTester.LineNum:140.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:34:47,162 - TestRun.RulesEngineTester.LineNum:140.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:37:53,789 - TestRun.RulesEngineTester.LineNum:140.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:40:26,443 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:42:13,571 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:46:41,066 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:51:50,592 - TestRun.RulesEngineTester.LineNum:145.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:51:50,593 - TestRun.RulesEngineTester.LineNum:160.Func:run - INFO - All test outputs parsed. 
+
+2022-07-22 10:53:40,549 - TestRun.RulesEngineTester.LineNum:145.Func:run - INFO - All tests complete. Writing outputs.
+
+2022-07-22 10:53:40,550 - TestRun.RulesEngineTester.LineNum:160.Func:run - INFO - All test outputs parsed. 
+

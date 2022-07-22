@@ -3,6 +3,7 @@ import os
 import subprocess
 import multiprocessing
 from multiprocessing import RLock
+from time import sleep
 
 class RulesEngineTester:
     def __init__(self) -> None:
@@ -33,7 +34,7 @@ class RulesEngineTester:
                 if personal_cmd[i] in ["-g", "-r", "--generate", "--run"]:
                     try:
                         filename = os.path.split(personal_cmd[i+1])[-1]
-                        # break
+                        break
                     except IndexError as e:
                         pass
             
@@ -64,15 +65,34 @@ class RulesEngineTester:
                     continue
                 
                 out_file.write(f"Attempt {attempts} Out:\n")
-                str_outs = outs.decode('utf-8')
-                outs = "┌"+str_outs.split("┌")[1]
+                outs = outs.decode('utf-8')
+                try:
+                    outs = "┌"+outs.split("┌")[1]
+                except IndexError as e:
+                    pass
                 out_file.write(outs)
                 out_file.write(f"Attempt {attempts} Error:\n")
                 out_file.write(errs.decode('utf-8'))
                 
+                # out_file.write(f"Attempt {attempts} Out:\n")
+                # out_file.write(outs.decode('utf-8'))
+                # out_file.write(f"Attempt {attempts} Error:\n")
+                # out_file.write(errs.decode('utf-8'))
                 break
+        
+        # attempts = 0
+        # while attempts < 3:
+        #     try:
+        #         outs, errs = subproc.communicate()
+        #     except subprocess.TimeoutExpired:
+        #         subproc.kill()
+        #         attempts = attempts + 1
+        #         continue        
+        #     break
 
         print(f"Subprocess Test for {filename} complete.")   
+
+        return {self.subproc_out_txt: (outs, errs)}
 
     def run(self, tests_to_run=None):
         """ Performs the test by calling postman/testfromexcel.py. Can be performed on a
@@ -116,13 +136,28 @@ class RulesEngineTester:
                 all_commands.append(test_cmnds_list)
             try:
                 if len(all_commands) > 1:
-                    self.multiple_tests_run(all_commands)
+                    results = self.multiple_tests_run(all_commands)
                 else:
-                    self.execute(all_commands[0])
+                    results = self.execute(all_commands[0])
             except Exception as e:
                 self.__log.info(f"An error occured during testing.\n\t {e}")
+        
+        self.__log.info("All tests complete. Writing outputs.")
+        
+        # for result in results:
+        #     for key in result:  # should only be 1 key
+        #         with open(key, 'a', encoding='utf-8') as out_file:
+        #             outs = result[key][0].decode('utf-8')
+        #             errs = result[key][1].decode('utf-8')
+        #             try:
+        #                 outs = "┌"+outs.split("┌")[1]
+        #             except IndexError as e:
+        #                 pass
+        #             out_file.write(outs)
+        #             out_file.write(errs)
+        #             sleep(2)
 
-        self.__log.info("All tests complete")
+        self.__log.info("All test outputs parsed. ")
     
     def multiple_tests_run(self, all_commands):
         """ Allows parallel execution of newman processes.
@@ -131,9 +166,11 @@ class RulesEngineTester:
             :param all_commands ::  list of lists
                 [[], [], [] ...] 
         """
-        with multiprocessing.Pool(2) as pool:
+        with multiprocessing.Pool(3) as pool:
             try:
                 processes = [pool.apply_async(self.execute, args=(personal_cmd,)) for personal_cmd in all_commands]
                 results = [proc.get() for proc in processes]
             except Exception as e:
-                self.__log.info(f"{e}")
+                self.__log.debug(f"{e}")
+        
+        return results

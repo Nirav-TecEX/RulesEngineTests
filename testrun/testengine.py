@@ -30,7 +30,6 @@ class RulesEngineTester:
         else:
             postman_cmd = ['python', f"{self.test_path}"] + personal_cmd
             for i in range(0, len(personal_cmd)):
-                # postman_cmd.append(f"'{personal_cmd[i]}'")
                 if personal_cmd[i] in ["-g", "-r", "--generate", "--run"]:
                     try:
                         filename = os.path.split(personal_cmd[i+1])[-1]
@@ -63,11 +62,14 @@ class RulesEngineTester:
                     attempts = attempts + 1
                     out_file.write(f"Attempt {attempts} complete.")
                     continue
-
+                
                 out_file.write(f"Attempt {attempts} Out:\n")
-                out_file.write(outs.decode('utf-8'))
+                str_outs = outs.decode('utf-8')
+                outs = "┌"+str_outs.split("┌")[1]
+                out_file.write(outs)
                 out_file.write(f"Attempt {attempts} Error:\n")
                 out_file.write(errs.decode('utf-8'))
+                
                 break
 
         print(f"Subprocess Test for {filename} complete.")   
@@ -103,7 +105,7 @@ class RulesEngineTester:
             
             try:
                 for filename in excel_file_dir_items:
-                    self.__execute(None, filename=filename)
+                    self.execute(None, filename=filename)
             except Exception as e:
                 self.__log.info(f"An error occured during testing.\n\t {e}")
         else:
@@ -113,7 +115,10 @@ class RulesEngineTester:
                 test_cmnds_list = single_cmd_str.split(",")
                 all_commands.append(test_cmnds_list)
             try:
-                self.multiple_tests_run(all_commands)
+                if len(all_commands) > 1:
+                    self.multiple_tests_run(all_commands)
+                else:
+                    self.execute(all_commands[0])
             except Exception as e:
                 self.__log.info(f"An error occured during testing.\n\t {e}")
 

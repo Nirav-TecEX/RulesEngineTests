@@ -1,149 +1,40 @@
-2022-07-21 09:19:38,810 - TestRun.RulesEngineTester.LineNum:35.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:06:18,337 - TestRun.RulesEngineTester.LineNum:119.Func:run - INFO - All tests complete
 
-2022-07-21 09:19:49,775 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:09:48,795 - TestRun.RulesEngineTester.LineNum:122.Func:run - INFO - All tests complete
 
-2022-07-21 09:22:01,399 - TestRun.RulesEngineTester.LineNum:35.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:21:06,318 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - An error occured during testing.
+	 [Errno 2] No such file or directory: 'temp\\diagnostic_files\\temp.txt'
 
-2022-07-21 09:22:09,303 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:21:06,319 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - All tests complete
 
-2022-07-21 10:42:39,706 - TestRun.RulesEngineTester.LineNum:35.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:21:31,646 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - An error occured during testing.
+	 'str' object has no attribute 'decode'
 
-2022-07-21 10:42:51,440 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:21:31,647 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - All tests complete
 
-2022-07-21 11:13:24,283 - TestRun.RulesEngineTester.LineNum:98.Func:run - INFO - An error occured during testing.
-	 expected str, bytes or os.PathLike object, not list
+2022-07-22 09:22:09,445 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - An error occured during testing.
+	 'str' object has no attribute 'decode'
 
-2022-07-21 11:13:33,833 - TestRun.RulesEngineTester.LineNum:98.Func:run - INFO - An error occured during testing.
-	 expected str, bytes or os.PathLike object, not list
+2022-07-22 09:22:09,446 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - All tests complete
 
-2022-07-21 11:22:09,634 - TestRun.RulesEngineTester.LineNum:51.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:23:17,443 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - An error occured during testing.
+	 'str' object has no attribute 'decode'
 
-2022-07-21 11:22:17,916 - TestRun.RulesEngineTester.LineNum:68.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:23:17,444 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
 
-2022-07-21 11:23:31,734 - TestRun.RulesEngineTester.LineNum:51.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:24:52,455 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - An error occured during testing.
+	 'str' object has no attribute 'decode'
 
-2022-07-21 11:23:39,177 - TestRun.RulesEngineTester.LineNum:68.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:24:52,456 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
 
-2022-07-21 11:24:28,017 - TestRun.RulesEngineTester.LineNum:51.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:26:44,477 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - An error occured during testing.
+	 'charmap' codec can't encode characters in position 0-70: character maps to <undefined>
 
-2022-07-21 11:24:38,212 - TestRun.RulesEngineTester.LineNum:68.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:26:44,478 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
 
-2022-07-21 11:27:43,421 - TestRun.RulesEngineTester.LineNum:51.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
+2022-07-22 09:27:15,497 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
 
-2022-07-21 11:27:51,474 - TestRun.RulesEngineTester.LineNum:68.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
+2022-07-22 09:29:26,980 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
 
-2022-07-21 11:27:51,475 - TestRun.RulesEngineTester.LineNum:111.Func:run - INFO - All tests complete
-
-2022-07-21 11:28:50,916 - TestRun.RulesEngineTester.LineNum:104.Func:run - INFO - Test from JSON payload: r u test
-
-2022-07-21 11:28:50,917 - TestRun.RulesEngineTester.LineNum:38.Func:__run - INFO - No file or commands given. 
-
-2022-07-21 11:28:50,918 - TestRun.RulesEngineTester.LineNum:104.Func:run - INFO - Test from JSON payload: r only test
-
-2022-07-21 11:28:50,919 - TestRun.RulesEngineTester.LineNum:38.Func:__run - INFO - No file or commands given. 
-
-2022-07-21 11:28:50,919 - TestRun.RulesEngineTester.LineNum:104.Func:run - INFO - Test from JSON payload: g only test
-
-2022-07-21 11:28:50,920 - TestRun.RulesEngineTester.LineNum:38.Func:__run - INFO - No file or commands given. 
-
-2022-07-21 11:28:50,921 - TestRun.RulesEngineTester.LineNum:104.Func:run - INFO - Test from JSON payload: g u test
-
-2022-07-21 11:28:50,922 - TestRun.RulesEngineTester.LineNum:38.Func:__run - INFO - No file or commands given. 
-
-2022-07-21 11:28:50,922 - TestRun.RulesEngineTester.LineNum:111.Func:run - INFO - All tests complete
-
-2022-07-21 11:29:47,361 - TestRun.RulesEngineTester.LineNum:104.Func:run - INFO - Test from JSON payload: r u test
-
-2022-07-21 12:02:10,279 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: r u test
-
-2022-07-21 12:02:35,319 - TestRun.RulesEngineTester.LineNum:110.Func:run - INFO - An error occured during testing.
-	 [Errno 2] No such file or directory: 'temp\\diagnostic_files\\temp\\excel_files\\SO_Travel_Notifications.txt'
-
-2022-07-21 12:02:35,322 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: r only test
-
-2022-07-21 12:02:47,530 - TestRun.RulesEngineTester.LineNum:110.Func:run - INFO - An error occured during testing.
-	 [Errno 2] No such file or directory: 'temp\\diagnostic_files\\temp\\excel_files\\SO_Travel_Notifications.txt'
-
-2022-07-21 12:02:47,532 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: g only test
-
-2022-07-21 12:02:50,769 - TestRun.RulesEngineTester.LineNum:110.Func:run - INFO - An error occured during testing.
-	 [Errno 2] No such file or directory: 'temp\\diagnostic_files\\temp\\excel_files\\SO_Travel_Notifications.txt'
-
-2022-07-21 12:02:50,772 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: g u test
-
-2022-07-21 12:02:51,331 - TestRun.RulesEngineTester.LineNum:110.Func:run - INFO - An error occured during testing.
-	 [Errno 2] No such file or directory: 'temp\\diagnostic_files\\temp\\excel_files\\SO_Travel_Notifications.txt'
-
-2022-07-21 12:02:51,333 - TestRun.RulesEngineTester.LineNum:112.Func:run - INFO - All tests complete
-
-2022-07-21 12:05:13,654 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: r u test
-
-2022-07-21 12:07:15,420 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: r u test
-
-2022-07-21 12:07:15,448 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
-
-2022-07-21 12:07:23,532 - TestRun.RulesEngineTester.LineNum:69.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
-
-2022-07-21 12:07:23,533 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: r only test
-
-2022-07-21 12:07:23,554 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
-
-2022-07-21 12:07:28,374 - TestRun.RulesEngineTester.LineNum:69.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
-
-2022-07-21 12:07:28,374 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: g only test
-
-2022-07-21 12:07:28,397 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
-
-2022-07-21 12:07:31,045 - TestRun.RulesEngineTester.LineNum:69.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
-
-2022-07-21 12:07:31,046 - TestRun.RulesEngineTester.LineNum:105.Func:run - INFO - Test from JSON payload: g u test
-
-2022-07-21 12:07:31,073 - TestRun.RulesEngineTester.LineNum:52.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
-
-2022-07-21 12:07:33,553 - TestRun.RulesEngineTester.LineNum:69.Func:__run - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
-
-2022-07-21 12:07:33,553 - TestRun.RulesEngineTester.LineNum:112.Func:run - INFO - All tests complete
-
-2022-07-21 14:45:12,561 - TestRun.RulesEngineTester.LineNum:55.Func:__execute - INFO - Subprocess Test for SO_Travel_Notifications.xlsx started.
-
-2022-07-21 14:45:28,015 - TestRun.RulesEngineTester.LineNum:72.Func:__execute - INFO - Subprocess Test for SO_Travel_Notifications.xlsx complete.
-
-2022-07-21 14:45:28,016 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - All tests complete
-
-2022-07-21 14:47:29,470 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - An error occured during testing.
-	 Pool.apply_async() got an unexpected keyword argument 'target'
-
-2022-07-21 14:47:29,471 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-21 14:47:53,629 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-21 14:55:00,442 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - An error occured during testing.
-	 __enter__
-
-2022-07-21 14:55:00,443 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-21 14:57:37,639 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - An error occured during testing.
-	 __enter__
-
-2022-07-21 14:57:37,640 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-21 14:58:26,665 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - __enter__
-
-2022-07-21 14:58:26,678 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-21 15:02:04,305 - TestRun.RulesEngineTester.LineNum:123.Func:run - INFO - All tests complete
-
-2022-07-21 15:53:08,712 - TestRun.RulesEngineTester.LineNum:118.Func:run - INFO - All tests complete
-
-2022-07-21 15:56:44,551 - TestRun.RulesEngineTester.LineNum:134.Func:multiple_tests_run - INFO - 'NoneType' object has no attribute 'append'
-
-2022-07-21 15:56:44,559 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
-
-2022-07-21 15:58:26,276 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
-
-2022-07-21 16:07:34,209 - TestRun.RulesEngineTester.LineNum:121.Func:run - INFO - All tests complete
-
-2022-07-21 16:09:17,701 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
-
-2022-07-21 16:14:28,326 - TestRun.RulesEngineTester.LineNum:120.Func:run - INFO - All tests complete
+2022-07-22 09:30:44,097 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
 

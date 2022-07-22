@@ -9,7 +9,7 @@ if __name__ == "__main__":
         log_config = json.load(f)
     dictConfig(log_config)
 
-    with open("JsonCommands.json") as f:
+    with open("JsonCommands2.json") as f:
         json_commands = json.load(f)
 
     __PATHS = {'temp_folder': os.path.join(os.getcwd(), "temp"),

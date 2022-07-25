@@ -94,15 +94,10 @@ The TecEx RulesEngine aims to increase the speed of the current website by creat
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This Test system can run in two ways. If you do not need the coverage report for the RulesEng, download the repo and follow the instructions. If you do need the coverage report, the RulesEng should be a package within this projects directory.
-
-To use this repo, run the "run_tests.py" file from your directory either by using the commandline or by double clicking the batch file. If you run it from the commandline, you can give an argument with the json to use. Otherwise, alter the "JsonCommands.json" file in the directory.
-* command
-  ```sh
-  python run_tests.py args
-  ```
+This Test system can run in two ways. If you do not need the coverage report for the RulesEng, download the repo and follow the instructions. If you do need the coverage report, the RulesEng should be a package within this project's directory.
 
 The results are stored in the */temp/diagnostics folder.
+
 
 ### Prerequisites
 
@@ -125,10 +120,15 @@ _An example on how to setup and install this app._
    ```sh
    npm install
    ```
-4. Run the code using
+4. Install the required libraries using
+  ```sh
+    pip install -r requirements.txt
+  ```
+5. Run the code using
    ```sh
    python run_tests.py args
    ```
+   or by using the batch file (uses the default json)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -137,9 +137,36 @@ _An example on how to setup and install this app._
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+To use this repo, run the "run_tests.py" file from your directory either by using the commandline or by double clicking the batch file. If you run it from the commandline, you can give an argument with the json to use (saved in the root directory). Otherwise, alter the "JsonCommands.json" file in the root directory.
+* command
+  ```sh
+  python run_tests.py <JsonCommands.json>
+  ```
 
-_Still to write_
+The commands in the json should be comma seperated. An example follows.
+```json
+{
+  "test name 1": "-r, temp\\excel_files\\SO_Travel_Notifications.xlsx, -u, <RulesEng endpoint>",
+  "test name 2": "-r, temp\\excel_files\\SO_Travel_Notifications1.xlsx", 
+  "test name 3": "-g, temp\\excel_files\\SO_Travel_Notifications2.xlsx", 
+}
+```
+
+*All of the excel files must be in the temp/excel_files folder.*
+
+There are three flags, namely:
+* If set, will generate the jsons from the excels and then run the newman collection
+  ```sh 
+  -r [arg]
+  ``` 
+* If set, will generate the jsons from the excels
+  ```sh 
+  -g [arg]
+  ```
+* If set, specifies which endpoint to use for the REng
+  ```sh 
+  -u [arg]
+  ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -158,6 +185,7 @@ _Still to write_
 - [ ] Add code coverage
 - [ ] Integrate with local RulesEngine
 - [ ] Integrate with any locally run RulesEngine
+- [ ] Add scheduler to update the local excel files
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

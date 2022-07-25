@@ -38,7 +38,7 @@
   <p align="center">
     README for the RulesEngineTestSystems!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://team.tecexlabs.dev/tecex-rules-system/docs/"><strong>Explore the RulesEngine docs »</strong></a>
     <br />
   </p>
 </div>

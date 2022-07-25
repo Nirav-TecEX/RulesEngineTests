@@ -1,116 +1,24 @@
-2022-07-22 09:06:18,337 - TestRun.RulesEngineTester.LineNum:119.Func:run - INFO - All tests complete
+2022-07-25 09:28:08,688 - TestRun.LineNum:58.Func:<module> - INFO - Checking/Creating folder directory... 
 
-2022-07-22 09:09:48,795 - TestRun.RulesEngineTester.LineNum:122.Func:run - INFO - All tests complete
+2022-07-25 09:28:08,693 - TestRun.LineNum:62.Func:<module> - INFO - Using file None
 
-2022-07-22 09:21:06,318 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - An error occured during testing.
-	 [Errno 2] No such file or directory: 'temp\\diagnostic_files\\temp.txt'
+2022-07-25 09:29:21,863 - TestRun.RulesEngineTester.LineNum:146.Func:run - INFO - All test complete.
 
-2022-07-22 09:21:06,319 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - All tests complete
+2022-07-25 11:20:03,040 - TestRun.LineNum:58.Func:<module> - INFO - Checking/Creating folder directory... 
 
-2022-07-22 09:21:31,646 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - An error occured during testing.
-	 'str' object has no attribute 'decode'
+2022-07-25 11:30:34,609 - TestRun.LineNum:62.Func:<module> - INFO - Checking/Creating folder directory... 
 
-2022-07-22 09:21:31,647 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - All tests complete
+2022-07-25 11:30:34,610 - TestRun.LineNum:68.Func:<module> - INFO - Using file a
 
-2022-07-22 09:22:09,445 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - An error occured during testing.
-	 'str' object has no attribute 'decode'
+2022-07-25 11:33:18,544 - TestRun.LineNum:62.Func:<module> - INFO - Checking/Creating folder directory... 
 
-2022-07-22 09:22:09,446 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - All tests complete
+2022-07-25 11:33:18,545 - TestRun.LineNum:68.Func:<module> - INFO - Using file a
 
-2022-07-22 09:23:17,443 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - An error occured during testing.
-	 'str' object has no attribute 'decode'
+2022-07-25 11:33:18,546 - TestRun.LineNum:81.Func:<module> - INFO - Error during process. Shutting down ...
 
-2022-07-22 09:23:17,444 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
+2022-07-25 11:34:05,954 - TestRun.LineNum:62.Func:<module> - INFO - Checking/Creating folder directory... 
 
-2022-07-22 09:24:52,455 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - An error occured during testing.
-	 'str' object has no attribute 'decode'
+2022-07-25 11:34:05,955 - TestRun.LineNum:68.Func:<module> - INFO - Using file a
 
-2022-07-22 09:24:52,456 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
-
-2022-07-22 09:26:44,477 - TestRun.RulesEngineTester.LineNum:127.Func:run - INFO - An error occured during testing.
-	 'charmap' codec can't encode characters in position 0-70: character maps to <undefined>
-
-2022-07-22 09:26:44,478 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
-
-2022-07-22 09:27:15,497 - TestRun.RulesEngineTester.LineNum:129.Func:run - INFO - All tests complete
-
-2022-07-22 09:29:26,980 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:30:44,097 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:34:04,015 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:34:04,024 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:35:26,977 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:35:26,989 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:38:12,386 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:39:27,925 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:39:27,936 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:44:17,518 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:44:17,530 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:45:26,544 - TestRun.RulesEngineTester.LineNum:138.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:45:28,568 - TestRun.RulesEngineTester.LineNum:124.Func:run - INFO - All tests complete
-
-2022-07-22 09:47:32,416 - TestRun.RulesEngineTester.LineNum:124.Func:run - INFO - All tests complete
-
-2022-07-22 09:50:02,408 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:50:02,419 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:51:23,143 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - INFO - list index out of range
-
-2022-07-22 09:51:23,161 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:53:52,507 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - DEBUG - list index out of range
-
-2022-07-22 09:53:52,518 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:54:50,800 - TestRun.RulesEngineTester.LineNum:139.Func:multiple_tests_run - DEBUG - list index out of range
-
-2022-07-22 09:54:50,808 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 09:59:31,854 - TestRun.RulesEngineTester.LineNum:140.Func:multiple_tests_run - DEBUG - list index out of range
-
-2022-07-22 09:59:31,861 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 10:00:02,304 - TestRun.RulesEngineTester.LineNum:140.Func:multiple_tests_run - DEBUG - list index out of range
-
-2022-07-22 10:00:02,320 - TestRun.RulesEngineTester.LineNum:125.Func:run - INFO - All tests complete
-
-2022-07-22 10:04:07,606 - TestRun.RulesEngineTester.LineNum:130.Func:run - INFO - All tests complete
-
-2022-07-22 10:33:10,903 - TestRun.RulesEngineTester.LineNum:140.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:34:47,162 - TestRun.RulesEngineTester.LineNum:140.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:37:53,789 - TestRun.RulesEngineTester.LineNum:140.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:40:26,443 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:42:13,571 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:46:41,066 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:51:50,592 - TestRun.RulesEngineTester.LineNum:145.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:51:50,593 - TestRun.RulesEngineTester.LineNum:160.Func:run - INFO - All test outputs parsed. 
-
-2022-07-22 10:53:40,549 - TestRun.RulesEngineTester.LineNum:145.Func:run - INFO - All tests complete. Writing outputs.
-
-2022-07-22 10:53:40,550 - TestRun.RulesEngineTester.LineNum:160.Func:run - INFO - All test outputs parsed. 
-
-2022-07-22 11:34:49,688 - TestRun.RulesEngineTester.LineNum:141.Func:run - INFO - All test complete.
-
-2022-07-22 14:26:02,199 - TestRun.RulesEngineTester.LineNum:143.Func:run - INFO - All test complete.
-
-2022-07-22 16:07:32,264 - TestRun.RulesEngineTester.LineNum:146.Func:run - INFO - All test complete.
+2022-07-25 11:34:05,957 - TestRun.LineNum:81.Func:<module> - INFO - Error during process. Shutting down ...
 

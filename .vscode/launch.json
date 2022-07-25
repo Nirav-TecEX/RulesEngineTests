@@ -5,12 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: RulesEngTests",
+            "name": "Python: RulesEngTests-DefaultJSON",
             "type": "python",
             "request": "launch",
             "program": "run_test.py",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Python: RulesEngTests-InputJSON",
+            "type": "python",
+            "request": "launch",
+            "program": "run_test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["JsonCommands.json"]
         },
         {
             "name": "Python: test",

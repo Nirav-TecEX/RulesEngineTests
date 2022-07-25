@@ -75,8 +75,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 The TecEx RulesEngine aims to increase the speed of the current website by creating a new backend mimiced from its Salesforce one. This project will test the new RulesEng backend using test cases defined in excel spreadsheets. These are converted to json collections which are passed to Postman using Newman. Results from these tests are stored in a created "temp/diagnostics" folder. Coverage reports are also created.  
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -121,9 +119,9 @@ _An example on how to setup and install this app._
    npm install
    ```
 4. Install the required libraries using
-  ```sh
-    pip install -r requirements.txt
-  ```
+   ```sh
+   pip install -r requirements.txt
+   ```
 5. Run the code using
    ```sh
    python run_tests.py args

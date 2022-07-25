@@ -86,9 +86,7 @@ The TecEx RulesEngine aims to increase the speed of the current website by creat
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Python][python]][coverage.py-url]
+* [![Python][python-coverage.py]][coverage.py-url]
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -97,33 +95,40 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+This Test system can run in two ways. If you do not need the coverage report for the RulesEng, download the repo and follow the instructions. If you do need the coverage report, the RulesEng should be a package within this projects directory.
+
+To use this repo, run the "run_tests.py" file from your directory either by using the commandline or by double clicking the batch file. If you run it from the commandline, you can give an argument with the json to use. Otherwise, alter the "JsonCommands.json" file in the directory.
+* command
+  ```sh
+  python run_tests.py args
+  ```
+
+The results are stored in the */temp/diagnostics folder.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
+Running the tests requires Newman. 
 * npm
   ```sh
-  npm install npm@latest -g
+  npm install -g newman
   ```
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+_An example on how to setup and install this app._
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Create a token for the API to update the excels at [https://example.com](https://example.com)
 2. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/Nirav-TecEX/RulesEngineTests.git
    ```
-3. Install NPM packages
+3. Install Newman. Visit [https://blog.postman.com/installing-newman-on-windows/](https://blog.postman.com/installing-newman-on-windows/) for a full guide.
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+4. Run the code using
+   ```sh
+   python run_tests.py args
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -135,7 +140,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_Still to write_
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -144,36 +149,18 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- [x] Run Newman Tests Locally
+- [x] Hit the RulesEng at an endpoint with the Requests
+- [x] Create a process for the tests
+- [x] Process results
+    - [x] Filter output and remove unnecessary information
+    - [x] Store output
+    - [ ] Relay information to testuser
+- [ ] Add code coverage
+- [ ] Integrate with local RulesEngine
+- [ ] Integrate with any locally run RulesEngine
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- LICENSE -->
@@ -188,9 +175,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Nirav Surajlal - niravs@tecex.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/Nirav-TecEX/RulesEngineTests.git](https://github.com/Nirav-TecEX/RulesEngineTests.git)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -217,3 +204,4 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [coverage.py-url]: https://pypi.org/project/coverage/
+[python-coverage.py]: https://img.shields.io/badge/python-coverage.py-blue

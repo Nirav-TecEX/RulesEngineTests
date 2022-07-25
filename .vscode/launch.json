@@ -22,10 +22,10 @@
             "args": ["JsonCommands.json"]
         },
         {
-            "name": "Python: test",
+            "name": "Python: CreateJsons",
             "type": "python",
             "request": "launch",
-            "program": "test.py",
+            "program": "create_json_commands.py",
             "console": "integratedTerminal",
             "justMyCode": true
         },

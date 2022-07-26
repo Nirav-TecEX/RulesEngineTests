@@ -42,12 +42,12 @@ def load_json_commands(json_file_name=None):
                     filename as an arg. """)
     else:
         try:
-            with open("JsonCommands2.json") as f:
+            with open(json_file_name) as f:
                 json_commands = json.load(f)
         except FileNotFoundError:
-            print("""
-                DEFAULT file does not exist. Please use add a useable
-                filename as an arg. """)
+            print(f"""
+                DEFAULT file ({json_file_name})does not exist. Please use add a 
+                useable filename as an arg. """)
 
     return json_commands
 
@@ -64,7 +64,10 @@ if __name__ == "__main__":
 
     filtered_args = filter_args(sys.argv[1:])
     json_file_name = filtered_args["json_file_name"]
-
+    
+    if not json_file_name:
+        json_file_name = "GeneratedJson.json"
+    
     __log.info(f"Using file {json_file_name}")
     
     try:
